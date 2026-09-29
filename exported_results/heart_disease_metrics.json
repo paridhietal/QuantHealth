@@ -1,0 +1,15 @@
+{
+  "dataset": "heart_disease",
+  "n_train": 237,
+  "n_test": 60,
+  "kernel_svm": {
+    "accuracy": 0.8,
+    "sensitivity": 0.7857142857142857,
+    "specificity": 0.8125
+  },
+  "vqc_seed42": {
+    "accuracy": 0.8666666666666667,
+    "sensitivity": 0.7857142857142857,
+    "specificity": 0.9375
+  }
+}
