@@ -1,0 +1,29 @@
+{
+  "input_columns_in_order": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "split": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "stratify": "y"
+  },
+  "pipeline": [
+    "StandardScaler",
+    "PCA(6, random_state=42)",
+    "MinMaxScaler(-pi, pi)"
+  ],
+  "pca_variance_explained": 0.6875110087825077,
+  "sklearn_version": "1.6.1"
+}

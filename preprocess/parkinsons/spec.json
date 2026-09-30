@@ -1,0 +1,38 @@
+{
+  "input_columns_in_order": [
+    "MDVP:Fo",
+    "MDVP:Fhi",
+    "MDVP:Flo",
+    "MDVP:Jitter",
+    "MDVP:Jitter",
+    "MDVP:RAP",
+    "MDVP:PPQ",
+    "Jitter:DDP",
+    "MDVP:Shimmer",
+    "MDVP:Shimmer",
+    "Shimmer:APQ3",
+    "Shimmer:APQ5",
+    "MDVP:APQ",
+    "Shimmer:DDA",
+    "NHR",
+    "HNR",
+    "RPDE",
+    "DFA",
+    "spread1",
+    "spread2",
+    "D2",
+    "PPE"
+  ],
+  "split": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "stratify": "y"
+  },
+  "pipeline": [
+    "StandardScaler",
+    "PCA(6, random_state=42)",
+    "MinMaxScaler(-pi, pi)"
+  ],
+  "pca_variance_explained": 0.9198214834731062,
+  "sklearn_version": "1.6.1"
+}
